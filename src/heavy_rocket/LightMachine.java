@@ -29,7 +29,7 @@ public class LightMachine extends DownMachine {
     public void CounterLight() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Ввести время в часах для расчета расстояния и расхода");
-        double t = sc.nextInt(); // ввести время в часах
+        double t = sc.nextDouble(); // ввести время в часах
         System.out.println("Время в часах: " + t + " ч.");
         double R; // расстояние, которое проедет автомобиль.
         R = t * getMaxSpeed();
@@ -37,6 +37,7 @@ public class LightMachine extends DownMachine {
         Y = R * (getOilResourse()*0.01);
 
         System.out.printf("За время %f ч., автомобиль марки %s,\nдвигаясь с максимальной скоростью %d км/ч проедет %f км и израсходует %f л. топлива", t, getBrand(), getMaxSpeed(), R, Y);
+        sc.close();
     }
 
 }
