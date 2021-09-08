@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class ActionThis {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        WarriorAir warriorAir = new WarriorAir(500, 220, 60, "KAMAZ", 100, 10000, 3, true);
-        HeavyMachine heavyMachine = new HeavyMachine(513, 350, 20, "tesla", 4, 20, 150);
-        LightMachine lightMachine = new LightMachine(516, 220, 80, "JMS", 6, 10, "Спец.покрытие", 50);
-        CivilAir civilAir = new CivilAir(130, 230, 30, "Ford", 422, 800, 422, true);
+        WarriorAir warriorAir = new WarriorAir(500, 3000, 30, "MustangW", 100, 1, 4, true);
+        HeavyMachine heavyMachine = new HeavyMachine(513, 350, 20, "JMS", 4, 20, 150);
+        LightMachine lightMachine = new LightMachine(516, 220, 80, "Tesla", 6, 10, "Спец.покрытие", 50);
+        CivilAir civilAir = new CivilAir(600, 2500, 30, "Boeing", 150, 800, 422, true);
         System.out.println("Вы хотите вывести информацию: \n1.Легкий транспорт; \n2.Грузовой транспорт; \n3.Военный транспорт; \n4.Гражданский транспорт");
         int rand = sc.nextInt();
             if (rand == 1) {
