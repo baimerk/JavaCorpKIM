@@ -9,7 +9,7 @@ public class Student {
     private Student() {
     }
 
-    private Student(String firstName, String lastName, String group, double averageMark) {
+    public Student(String firstName, String lastName, String group, double averageMark) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.group = group;
@@ -25,6 +25,10 @@ public class Student {
         }
         return bunRub;
     } // метод по умолчанию.
+
+    public void Dysplay() {
+        System.out.printf("Имя студента : %s,\nФамилия студента : %s,\nГруппа студента : %s,\nСредняя оценка студента : %f\n", this.firstName, this.lastName, this.group, this.averageMark);
+    }
 
     public void DysplaygetSolarship() {
         System.out.println(getScholarship());
